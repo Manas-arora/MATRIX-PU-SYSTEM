@@ -2,6 +2,9 @@
 An Oragnisation website for MATRIX PU SYSTEM (POLYURETHANE SYSTEM HOUSE) has created reputation for  technical enterprises in the field of Polyurethane chemicals which to support industries like  Insulation Products (construction, appliance, freezer and thermoware), automotive (cold  cure mould), Furniture, ISF , Adhesives and sealants. 
 
 
+<img width="785" alt="image" src="https://github.com/Manas-arora/MATRIX-PU-SYSTEM/assets/127409806/2a24d215-cfd4-45cd-92f5-922aa41ca5d0">
+
+
 The Matrix PU Systems Website aims to create an online platform for MATRIX PU SYSTEMS (Polyurethane System House) to enhance its online presence, manage customer queries, process orders, and improve publicity. This document outlines the software requirements for developing this website using HTML, JavaScript, CSS, AngularJS, Node.js, and MongoDB.
 
 2. Business Requirements
