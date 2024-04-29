@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix PU Systems</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<style>
+    
+    *{
+        margin: 0px;
+        padding: 0;
+    }
+    :root{
+        --navbar-height: 59px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+      
+    }
+
+    #logo{
+        margin: 10px 34px;
+        height: 54px;
+    }
+    #logo img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        background-color: rgb(20, 160, 95);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+
+    }
+    #navbar ul li{
+        color:beige;
+        list-style: none;
+        font-size: 1.3rem;
+        
+    }
+    #navbar ul li a{
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+    #navbar ul li a:hover{
+        color: rgb(231, 234, 231);
+        background-color: rgb(11, 94, 45);
+        border-radius: 2.5px;
+        
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+        
+    }
+    #home h1{
+        color: rgb(141, 141, 227);
+        text-align;
+        font-size:xx-large;
+    }
+    #home p{
+        color: aliceblue;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .h-primary{
+        font-size: 3.8rem;
+        padding: 12px;
+
+    }
+    .wrapper img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+
+    }
+    .img1{
+        width: 100px;
+        align-items: left;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1; 
+        opacity: 0; 
+        transition: opacity 500ms linear 0s;
+
+    }
+    footer{
+       position: fixed;
+       bottom:  0;
+       left: 0;
+       width: 100%;
+        padding: 20px;
+        z-index: 1000;
+        background-color: rgb(20, 160, 95);
+
+    }
+    footer img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+    }
+    footer h2{
+        color: aliceblue;
+    }
+    footer p{
+        color: aliceblue;
+        font-size: 18px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #home {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #0c09eb;
+            margin-bottom: 20px;
+        }
+        
+        .message {
+            font-size: 1.5rem;
+            color: #3a15f1;
+        }
+
+</style>
+<body>
+    <header role="banner">
+   <nav id="navbar">
+    <div id="logo">
+        <img src="logo.png" alt="logo">
+
+    </div>
+    <ul>
+        <li class="item"><a href="#"><b>Home</b></a></li>
+        <li class="item"><a href="about.html"><b>About Us</b></a></li>
+        <li class="item"><a href="services.html"><b>Services</b></a></li>
+        <li class="item"><a href="products.html"><b>Products</b></a></li>
+        <li class="item"><a href="#contact"><b>Contact</b></a></li>
+    </ul>
+   </nav>
+</header>
+<div id="home" ng-controller="HomeController">
+    <h1>{{ message }}</h1>
+<div class="mySlide" style="height: 334.896px;">
+    <div class="track" style="opacity: 1; width: 292px;">
+    
+    <div class="img1" tabindex="0" id="slide00"></div> 
+        <img src="pic2.jpg" alt="banner1">
+<div class="wrapper">
+<div class="banner_text">
+<h2>Matrix PU Systems</h2>
+<p>Expert in Polyurethane Foam Chemicals <br> A house of specialized tailor made Polyols and Isocyanate</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Enter your email below to receive updates and promotions:</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" name="email" placeholder="Your Email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+</div>
+</div>
+<footer id="footer" class="site-footer">
+    <div class="footer_logo">
+        <div class="wrapper">
+            <img src="logo.png" alt="MPUS">
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="wrapper">
+            <div class="column">
+                <h2>Matrix PU Systems</h2>
+                <p>
+                    <strong>Regd. Office:</strong>
+                    Jhundpur Industrial Area, Rai, Sonepat, Haryan PIN-131023 Industrial
+                    <br>
+                    <strong>Address:</strong>
+                    B-1/48,49, UGF, Sector-16, Rohini, Delhi-110089 INDIA
+                    <br>
+                    <strong>Contact:</strong>
+                    9811239477
+                    <br>
+                    <strong>Email:</strong>
+                    <a href="mailto: matrixpusystems@gmail.com">
+                    matrixpusystems@gmail.com</a> ,
+                    <br>
+                    <a href="mailto: lalitpuf@rediffmail.com ">lalitpuf@rediffmail.com </a>
+                    <br>
+                    <strong>Website:</strong>
+                    <a href="www.matrixpusystems.com"></a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+   </footer>
+   <script>
+    
+    angular.module('app', [])
+            .controller('HomeController', function($scope) {
+                $scope.message = "Welcome to Matrix PU Systems!";
+            });
+
+    var modal = document.getElementById("myModal");
+        var closeButton = document.getElementsByClassName("close")[0];
+   
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+
+        closeButton.onclick = function() {
+            modal.style.display = "none";
+        }
+   
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+   
+        document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            modal.style.display = "none";
+        });
+
+    function scrollToFooter() {
+        var footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    
+    var contactLinks = document.querySelectorAll('a[href="#contact"]');
+    contactLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            scrollToFooter(); 
+        });
+    });
+</script>
+</body>
+</html>

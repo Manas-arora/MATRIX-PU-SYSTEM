@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICES</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    :root{
+        --navbar-height: 59px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position: sticky;
+      
+    }
+
+    #logo{
+        margin: 10px 34px;
+        height: 54px;
+    }
+    #logo img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        background-color: rgb(20, 160, 95);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+
+    }
+    #navbar ul li{
+        color:beige;
+        list-style: none;
+        font-size: 1.3rem;
+        
+    }
+    #navbar ul li a{
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+    #navbar ul li a:hover{
+        color: rgb(231, 234, 231);
+        background-color: rgb(11, 94, 45);
+        border-radius: 2.5px;
+        
+    }
+
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #home::before{
+        content: '';
+        position: absolute;
+        
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+        
+    }
+    #home h1{
+        color: rgb(141, 141, 227);
+        text-align;
+        font-size:xx-large;
+    }
+    #home p{
+        color: aliceblue;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .h-primary{
+        font-size: 3.8rem;
+        padding: 12px;
+
+    }
+    .wrapper img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+
+    }
+    .img1{
+        width: 146px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: -1; 
+        opacity: 0; 
+        transition: opacity 500ms linear 0s;
+
+    }
+    footer{
+        margin: 5px;
+        padding: 20px;
+        position:sticky;
+        background-color: rgb(20, 160, 95);
+        text-align: center;
+        justify-items: left;
+
+    }
+    footer img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+    }
+    footer h2{
+        color: aliceblue;
+    }
+    footer p{
+        color: aliceblue;
+        font-size: 18px;
+    }
+    #furniture{
+        text-align: center;
+    }
+    #automobile{
+        text-align: center;
+    }
+    #insulating{
+        text-align: center;
+    }
+    .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #e01212; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        #furniture img {
+            max-width: 100%;
+            height: auto;
+            width: 400px; /* Set the maximum width */
+            padding: 20px;
+        }
+        #insulating, #furniture, #automobile {
+            text-align: center;
+            margin-top: 20px; 
+        }
+        
+        @media only screen and (max-width: 768px) {
+            #furniture img {
+                width: 80%; 
+            }
+        }
+</style>
+</head>
+<body>
+    <header role="banner">
+   <nav id="navbar">
+    <div id="logo">
+        <img src="logo.png" alt="logo">
+
+    </div>
+    <ul>
+        <li class="item"><a href="home.html"><b>Home</b></a></li>
+        <li class="item"><a href="about.html"><b>About Us</b></a></li>
+        <li class="item dropdown"><a href="#"><b>Services</b></a>
+            <!-- Dropdown content -->
+            <div class="dropdown-content">
+                <a href="#">Insulation</a>
+                <a href="#">Furniture</a>
+                <a href="#">Automobile</a>
+            </div>
+        </li>
+        <li class="item"><a href="products.html"><b>Products</b></a></li>
+        <li class="item"><a href="#contact"><b>Contact</b></a></li>
+    </ul>
+   </nav>
+</header>
+
+<img src="industries.jpg" style="height: 100px ; width: 100px; text-align: center;">
+<h1 align="center" style="color: black; animation: both; ">INDUSTRIES WE SERVE</h1>
+
+    <div id="insulating" style="display: flex;">
+        <div style="padding: 20px;">
+        <img src="INSULATION.png" alt="">
+        <h3>INSULATION</h3>
+        <p>Insulating solutions provided as per the customer requirement</p>
+    </div>
+    <div style="margin-left: 70px; padding: 20px;"> 
+
+        <img src="thermoware\1.jpg" alt="" >
+    </div>
+    </div>
+    <div id="furniture" style="display: flex;">
+        <div style="padding: 20px;">
+        <img src="FURNITURE.png" alt="">
+        <h3>FURNITURE and MATTRESS</h3>
+        <br>
+        <p>High quality Raw materials supplied for Foam manufacturing of Mattress and Furniture</p>
+    </div>
+    <div style="margin-left: 70px; padding: 20px;"> 
+
+        <img src="furniture\1.jpg" alt="">
+    </div>
+    </div>
+    <div id="automobile" style="display: flex;">
+        <div style="padding: 20px;">
+        <img src="AUTOMOBILE.png" alt="">
+        <h3>AUTOMOBILE</h3>
+        <p>High grade Polyurethane chemicals for producing long lasting Flexible Polyurethane Foams</p>
+        </div>
+    <div style="margin-left: 70px; padding: 20px;"> 
+
+        <img src="automobile\1.jpg" alt="" style="height: 280px; width: 400px; padding:20px">
+    </div>
+    </div>
+</div>
+
+
+<footer id="footer" class="site-footer">
+    <div class="footer_logo">
+        <div class="wrapper">
+            <img src="logo.png" alt="MPUS">
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="wrapper">
+            <div class="column">
+                <h2>Matrix PU Systems</h2>
+                <p>
+                    <strong>Regd. Office:</strong>
+                    Jhundpur Industrial Area, Rai, Sonepat, Haryan PIN-131023 Industrial
+                    <br>
+                    <strong>Address:</strong>
+                    B-1/48,49, UGF, Sector-16, Rohini, Delhi-110089 INDIA
+                    <br>
+                    <strong>Contact:</strong>
+                    9811239477
+                    <br>
+                    <strong>Email:</strong>
+                    <a href="mailto: matrixpusystems@gmail.com">
+                    matrixpusystems@gmail.com</a> ,
+                    <br>
+                    <a href="mailto: lalitpuf@rediffmail.com ">lalitpuf@rediffmail.com </a>
+                    <br>
+                    <strong>Website:</strong>
+                    <a href="www.matrixpusystems.com"></a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+   </footer>
+   <script>
+    
+    var dropdown = document.querySelector('.dropdown');
+
+    dropdown.addEventListener('mouseover', function() {
+        dropdown.querySelector('.dropdown-content').style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseout', function() {
+        dropdown.querySelector('.dropdown-content').style.display = 'none';
+    });
+
+    function scrollToFooter() {
+            var footer = document.getElementById('footer');
+            footer.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        
+        var contactLinks = document.querySelectorAll('a[href="#contact"]');
+        contactLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                scrollToFooter(); 
+            });
+        });
+</script>
+</body>
+</html>

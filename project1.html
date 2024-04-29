@@ -1,0 +1,690 @@
+<html ng-app="myApp">
+    <head>
+        <title>sprint acadmey 
+        </title>
+        
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif ;
+}
+body {
+    color:burlywood;
+}
+.header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    background: cornsilk;
+    justify-content:space-between;
+    display:flex;
+    align-items:center;
+    z-index: 100;
+}
+.logo{
+    position:relative;
+    font-size: 25px;
+    color:darkgoldenrod;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    display: inline-block;
+    font-size:25px;
+    color:chocolate;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: brown;
+}
+.ani {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.ani {
+    width: 500px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+.image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slideAnimation 3s linear infinite alternate; 
+}
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%); 
+    }
+}
+.home {
+    position:relative;
+    width:100%;
+    justify-content:space-between;
+    height:100vh;
+    background: url("C:\Users\asus\OneDrive\Pictures\Screenshots\Screenshot 2024-03-27 115710.png") no-repeat;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    padding:70px 10% 0;
+
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight:700;
+}
+.home-content h1{
+    font-size:
+}
+.home-content h3 {
+    font-size:32px;
+    font-weight:700;
+}
+.home-content h1{
+    font-size:56px;
+    font-weight:700;
+    margin: -3px 
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.home-content h3:nth-of-type()
+.home-content p{
+    font-size: 20px;
+}
+.home-sci a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width: 40px;
+    height:40px;
+    background: transparent;
+    border: 2px solid coral;
+    border-radius: 50%;
+    font-size: 20px;
+    color:chocolate;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+} 
+.home-sci a:hover{
+    background-color:bisque;
+    color:black;
+    box-shadow: 0 0 20px;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:darkgoldenrod;
+    border-radius:40px;
+    font-size:16px;
+    color:brown;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:600;
+
+}
+.btn-box:hover{
+    box-shadow: 2px 2px 15px chocolate;
+   
+}
+.about{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap:1.5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width:630px;
+    height:auto;
+    width:100%;
+    border-radius:8px;
+}
+.about-text h2{
+    font-size:60pz;
+    color:brown;
+}
+.about-text h2 span{
+    color:chocolate;
+}
+.about-text h4{
+    font-size:30px;
+    font-weight:600;
+    color:brown;
+    line-height:1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color:brown;
+    font-size:15px;
+    line-height:3rem;
+}
+.container{
+    padding:90px;
+}
+#servives{
+    color:cadetblue;
+    font-size:20px;
+    line-height:1.4;
+    margin-bottom:4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color:brown;
+}
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+}
+.services-list div{
+    background-color:antiquewhite;
+    padding: 40px;
+    font-size: 13px;
+    width:400px;
+    font-weight: 13px;
+    border-right: 20px;
+    border-radius: 30px;
+    margin-left:30px;
+    float: left;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow:1px 1px 20px rgb(216, 149, 101),
+               1px 1px 40px coral;
+
+}
+.services-list div i {
+    font-size:50px;
+    font-weight:500;
+    margin-bottom:30px;
+}
+.services-list div h2{
+    font-size:30px;
+    font-weight:500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:chocolate;
+    border-radius: 40px;
+    font-size: 16px;
+    color:black;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:600;
+}
+.read:hover {
+    box-shadow: 2px 2px 15px chocolate;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+.main-text{
+    padding-top:130px;
+    margin-top:200px;
+}
+.main-text h2{
+    font-size:30px;
+    line-height:1;
+    text-align:center;
+}
+.main-text h2 span {
+    color:brown; 
+
+}
+.portfolio-content{
+    display: grid;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-left:30px;
+    margin-top:20px;
+    cursor: pointer;
+    text-align:center;   
+}
+.row img{
+    width:100%;
+    border-radius:8px;
+    display:block;
+    transition: transform 0.5s;
+}
+.layer{
+    width:100%;
+    height:0;
+    background: linear-gradient(white, coral);
+    position:absolute;
+    border-radius:8px;
+    left: 0;
+    bottom: 0;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+
+}
+.layer h5{
+    color:black;
+    font-size: 20px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+.layer p{
+    color:black;
+    font-size:1rem;
+    line-height:1.8;
+}
+.layer i{
+    color:cadetblue;
+    margin-top: 20px;
+    font-size:20px;
+    background-color:azure;
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+.row:hover img{
+    transform: scale(1.1);
+
+}
+.row:hover .layer{
+    height: 100%;
+}
+.frm {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.button{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:darkgoldenrod;
+    border-radius:40px;
+    font-size:15px;
+    color:brown;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:400;
+    margin:auto;
+    text-align:center;
+
+    
+}
+.crse{
+    font-size:larger;
+    color:brown;
+}
+.option{ 
+    border-color:coral;
+    padding-left:20px;
+}
+.opt{
+    padding: 40px;
+    height:200px;
+    width:500px;
+    margin:auto;
+    text-align:center;
+    color:darkred;
+    border-radius:30px;
+    background-color:navajowhite;
+    margin-bottom:30px;
+}
+.wrapper{
+    width:750px;
+    background-color:burlywood;
+    border-radius: 10px;
+    color:brown;
+    padding: 40px 35px 55px;
+    background-color:blanchedalmond;
+    color:burlywood;
+    padding: 40px 35px 55px;
+    border: 2px solid ;
+    box-shadow: 0 0 10px coral;
+    margin:auto;
+}
+.wrapper h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrapper .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+.input-box .input-field{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin: 13px 0;
+}
+.input-box .input-field input{
+    width:100%;
+    height:100%;
+    background-color:transparent;
+    border: 2px solid coral;
+    outline: none;
+    font-size: 16px;
+    color:black;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+.input-box .input-field input::placeholder{
+    color:brown;
+}
+.input-box .input-feild i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size:20px;
+}
+.wrapper .btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background-color:darkgoldenrod;
+    border-radius:40px;
+    font-size:16px;
+    color:brown;
+    letter-spacing:1px;
+    text-decoration:none;
+    font-weight:600;
+}
+.wrapper label{
+    font-size: 14.5px;
+    display: inline-block;
+    margin: 10px 0 23px;
+}
+.mark{
+    text-align:center;
+    color:brown;
+    font-size: 20px;
+    font-weight: 10px;
+    height: 300px;
+    padding-bottom: 70px
+}
+.sug{
+    color:brown;
+    margin-top:30px;
+}
+#registrationform {
+    width: 300px;
+    margin: 0 auto;
+}
+input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+.buttonn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.reg{
+    text-align:center;
+    margin:auto;
+    color:brown;
+}
+.ree{
+    border:solid;
+    background-color:grey;
+    margin:auto;
+    width:100%;
+    height:400px;
+    padding:30px;
+}
+.reg span{
+    color:chocolate;
+}
+
+        </style>
+        <body style="background-color:white">
+            <header class="header">
+            <a href="#" class="logo">SPRINT ACADMEY</a>
+            <nav class="navbar">
+            <a href="#"> Home</a>
+            <a href="#"> About us</a>
+            <a href="#">Resources</a>
+            <a href="#"> contact us</a>
+            </nav>
+            </header>
+            <section class="home">
+                <div class="ani">
+                <img src="C:\Users\asus\OneDrive\Pictures\Screenshots\Screenshot 2024-04-09 003206.png" alt="image 1" class="image">
+                </div>
+                <div class="home-content">
+                    <h3>Evaluate your knoweldge</h3>
+                    <h3> learning from your interested <span class="text">Crash Course</span></h3>
+                    <p> Your domain knowledge for being a developer and beginners are</p>
+                    <br> find us in different platforms and online applications and get updates.
+                    <div class="home-sci">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-telegram' ></i></a>
+                        </div>
+                        <a href="#" class="btn-box">MORE ABOUT US</a>
+                        </div>
+                        <span class="home-imghover"></span>
+                </section>
+                <section style="color:white" class="about" id="about">
+                    <div class="about-img">
+                        <img src="C:\Users\asus\OneDrive\Pictures\Screenshots\Screenshot 2024-04-15 224326.png">
+                    </div>
+                    <div class="about-text">
+                        <h2>ABOUT <span>ACADEMY</span></h2>
+                        <h4>Develop learner’ Operations Skills</h4>
+                        <P>It is important that your knowledge feel free to express themselves about what bothers them. Establish from the start a relationship of trust to help you improve your old practices. You may be surprised at what your interns have to say: interns see your company with fresh eyes and their assessment could help the company to develop.</P>
+                        <a href="#" class="btn-box">Learn more </a>
+                    </div>
+                </section>
+                <section>
+                    <div class="services" id="services">
+                        <div class="container">
+                            <h1 class="sub-title"> OUR <span>COLLABORATIONS</span></h1>
+                            <div class="services-list">
+                                <div>
+                                        <i class='bx bx-code' ></i> 
+                                        <h2> IBM</h2>
+                                    <p>IBM held the seminar for collective information  about UI/UX design importance.
+                                    </p>   
+                                    <a href="#" class="read"> learn more</a>
+                                </div>
+                                <div>
+                                    <i class='bx bxl-apple' ></i>
+                                    <h2> MICROSOFT</h2>
+                                <p>Microsoft held the orientation for Graphics students to mske them aware about analysis managment.
+                                </p>   
+                                <a href="#" class="read"> learn more</a>
+                            </div>
+                            <div>
+                                <i class='bx bxl-microsoft' ></i>
+                                <h2> APPLE</h2>
+                            <p>Apple organise the webinar for students you wants to learn about the Project management and held different events for learning.
+                            </p>   
+                            <a href="#" class="read"> learn more</a>
+                        </div>
+                            </div>
+                            </div>
+                </section>
+                <div id="portfolio" id="project">
+                    <div class="main-text" id="project">
+                        <h2> COURSE IN WHICH YOU CAN <span>ENROLL</span></h2>
+                        <div class="portfolio-content">
+                            <div class="row">
+                                <h2 class="mark"> MARKETING</h2>
+                                <div class="layer">
+                                    <h5>MARKETING</h5>
+                                    <P> It teach strategies for influencing customer behavior throughout the customer lifecycle. Learn fundamentals like creating a marketing
+                                        strategy, brand building, advertising and budget allocation, and leveraging digital and social media channels to reach your business goals.</P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mark"> GRAPHICS DESIGN</h2>
+                                <div class="layer">
+                                    <h5>GRAPHICS DESIGN</h5>
+                                    <P>Graphic design is all around us, in a myriad of forms, both on screen and in print, yet it is always made up of images and words to create a communication goal. </P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mark">UI/UX DESIGN</h2>
+                                <div class="layer">
+                                    <h5>UI/UX DESIGN</h5>
+                                    <P>Understand the basics of UX research, like planning research studies, conducting interviews and usability studies, and synthesizing research results</P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mark"> PROJECT MANAGEMENT</h2>
+                                <div class="layer">
+                                    <h5>Project Management</h5>
+                                    <P>Learn the foundations of Agile project management, with a focus on implementing Scrum events, building Scrum artifacts, and understanding Scrum roles</P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mark">USER INTERFACE</h2>
+                                <div class="layer">
+                                    <h5>USER NTERFACE</h5>
+                                    <P>User experience design is the perceived value of a product, depicted as a feedback loop where it passes between businesses and users. </P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 class="mark">ACCOUNT AND RECORDS ANALYSIS</h2>
+                                <div class="layer">
+                                    <h5>ACCOUNT AND RECORD ANALYSIS</h5>
+                                    <P>Prepare for a new career in bookkeeping. Gain in-demand accounting and finance skills that can have you job-ready in less than 4 months.</P>
+                                    <a href="#"> <i class='bx bx-link-external' style="color:brown"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                        </div>
+                        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+                    </head>
+                    <h3 class="sug">    If you are computer science student we can recommend you our different courses on the basis of your year of study in the university/college</h3>
+                    <div class="option" ng-controller="OptionController">
+                        <form class="frm">
+                            <label class="crse" for="textInput"> Your current year of study:</label>
+                            <input type="text" id="textInput" ng-model="inputString" required>
+                            <button  class="button" type="button" ng-click="displayOptions()">Submit</button>
+                        </form>
+                        <div class="opt" id="options">
+                            <p>{{optionText}}</p>
+                        </div>
+                    </div>
+                
+                    <script>
+                        angular.module('myApp', [])
+                            .controller('OptionController', function ($scope) {
+                                $scope.displayOptions = function () {
+                                    switch ($scope.inputString) {
+                                        case "1":
+                                            $scope.optionText = ' For 1st year student there are high chances of intrest in ui desgin and development.We has wide range of UI/UX design, from beginner to advanced levels. Look for courses with high ratings and reviews, and check the course syllabus to ensure it covers topics relevant to your learning goals';
+                                            break;
+                                        case "2":
+                                            $scope.optionText ='For 2nd year student there are high chances of interest development and account analysis and marketing.school resources to find which tech companies are looking for interns; some colleges and universities offer assistance in searching for internships. Colleges might host career fairs where you can meet recruiters and hiring managers face-to-face to discuss the possibility of serving in an internship';
+                                            break;
+                                            case "3":
+                                            $scope.optionText =' For 3rd year students there are many opportunities like marketing , managment bridging the gap between theoretical learning and practical application. These internships provide students with the opportunity to work in real-world business environments. It helps to gain valuable insights into industry practices';
+                                            break;
+                                            case "4":
+                                            $scope.optionText ='For 4th year student We provide a Marketing Intern, or Corporate Marketing Internt to assists the marketing department in their advertising and promotional efforts. Their main duties include completing clerical and administrative duties, building social media campaigns and preparing promotional materials and presentations.';
+                                            break;
+                                            case "5":
+                                                $scope.optionText='For 5th year Our all industrial Advisory courses help to  increase in  guidance and increase knowledgeBoard shape our curriculum through their commercial insight and guidance. Our degrees will prepare you for a career in the industry and give you the skills employers want.';
+                                                break;
+                                        default:
+                                            $scope.optionText = 'enter correct year';
+                                    }
+                                };
+                            });
+                            </script>
+<div class="ree">
+    <h2 class="reg">Register <span> Now</span></h2>
+<form id="registrationForm">
+    <input type="text" id="fullName" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="university" id="university" placeholder="university of study" required>
+    <input type="course" id="course" placeholder="Enter your course" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button class="button" type="submit">Register</button>
+</form>
+</div>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var fullName = document.getElementById('fullName').value;
+        var email = document.getElementById('email').value;
+        var university = document.getElementById('university').value;
+        var course = document.getElementById('course').value;
+        var password = document.getElementById('password').value;
+        console.log('Full Name:', fullName);
+        console.log('Email:', email);
+        console.log('university:', university);
+        console.log('course:', course);
+        console.log('Password:', password);
+        document.getElementById('registrationForm').reset();
+    });
+<div id="succ" style="display: none;">
+    <p>Congratulations, your registration is successful!</p>
+</div>
+<script>
+    document.getElementById("registrationForm").addEventListener("Register", function(event) {
+    event.preventDefault();
+    document.getElementById("succ").style.display = "block";
+    });
+</script>
+  </body>
+</html>

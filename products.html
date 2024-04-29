@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-Matrix PU Systems</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0;
+    }
+    :root{
+        --navbar-height: 59px;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        position:relative;
+        top: 0;
+        width: 100%;
+    }
+
+    #logo{
+        margin: 10px 34px;
+        height: 54px;
+    }
+    #logo img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+
+    }
+    #navbar ul{
+        display: flex;
+    }
+    #navbar::before{
+        content: "";
+        background-color: rgb(20, 160, 95);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        
+
+    }
+    #navbar ul li{
+        color:beige;
+        list-style: none;
+        font-size: 1.3rem;
+        
+    }
+    #navbar ul li a{
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: aliceblue;
+        
+    }
+    #navbar ul li a:hover{
+        color: rgb(231, 234, 231);
+        background-color: rgb(11, 94, 45);
+        border-radius: 2.5px;
+        
+    }
+
+
+
+
+    
+        
+    footer{
+        margin: 5px;
+        padding: 20px;
+        position:sticky;
+        background-color: rgb(20, 160, 95);
+
+    }
+    footer img{
+        margin: 3px 5px;
+        height: 50px;
+        align-items: center;
+    }
+    footer h2{
+        color: aliceblue;
+    }
+    footer p{
+        color: aliceblue;
+        font-size: 18px;
+    }
+    
+
+    
+    #products{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        margin: 30px;
+    }
+    #quick-enquiry-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    #quick-enquiry-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    #quick-enquiry-form input[type="text"],
+    #quick-enquiry-form input[type="email"],
+    #quick-enquiry-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    #quick-enquiry-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #quick-enquiry-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    #quick-enquiry-form .error-message {
+        color: red;
+        margin-top: 5px;
+    }
+
+
+</style>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+<body>
+  
+   <nav id="navbar">
+    <div id="logo">
+        <img src="logo.png" alt="logo">
+
+    </div>
+    <ul>
+        <li class="item"><a href="home.html"><b>Home</b></a></li>
+        <li class="item"><a href="about.html"><b>About Us</b></a></li>
+        <li class="item"><a href="services.html"><b>Services</b></a></li>
+        <li class="item"><a href="#"><b>Products</b></a></li>
+        <li class="item"><a href="#contact"><b>Contact</b></a></li>
+    </ul>
+   </nav>
+  
+    <h2 style="padding: 15px; font-size: 30px; text-decoration: underline red 5px; text-align:center;">Our Products</u></h2>
+    <br>
+    <div id="products">
+    <p style="font-size: 25px;">At Matrix PU systems, we manufacture almost all grades of Polyols.</p>
+    <br>
+    <p><strong style="color: rgb(228, 150, 150);">Flexible Polyurethane foam</strong>  is the most common cushioning material used in upholstered furniture. Foam has a variety of applications in upholstery. And the type of foam used varies from applications to applications such as Furniture and Mattress.
+
+        We have been one of the largest importer and supplier of Polyurethane raw materials to the furniture and Mattress industry for the manufacturing of foam which are high quality and durable. </p>
+    <br>
+
+    <h3  style= "font-size: 20px; color: rgb(230, 130, 130);">Products supplied for Rigid Foam</h3>
+<div id="list" style="padding;">
+    <ol type="1">
+        
+        <li>MSR 2001 - For Thermoware industry</li>
+      
+        
+        <li>MSR 2002</li>
+        <li>MSR 2003</li>
+    </ol>
+</div>    
+</div>
+</div>
+<div id="quick-enquiry-form">
+    <h2>Quick Enquiry</h2>
+    <form id="enquiry-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject">
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Send">
+    </form>
+    <div id="form-error-message" class="error-message"></div>
+</div>
+
+<footer id="footer" class="site-footer">
+    <div class="footer_logo">
+        <div class="wrapper">
+            <img src="logo.png" alt="MPUS">
+        </div>
+    </div>
+    
+    <div class="contacts">
+        <div class="wrapper">
+            <div class="column">
+                <h2>Matrix PU Systems</h2>
+                <p>
+                    <strong>Regd. Office:</strong>
+                    Jhundpur Industrial Area, Rai, Sonepat, Haryan PIN-131023 Industrial
+                    <br>
+                    <strong>Address:</strong>
+                    B-1/48,49, UGF, Sector-16, Rohini, Delhi-110089 INDIA
+                    <br>
+                    <strong>Contact:</strong>
+                    9811239477
+                    <strong>Email:</strong>
+                    <a href="mailto: matrixpusystems@gmail.com">
+                    matrixpusystems@gmail.com</a> ,
+                    <br>
+                    <a href="mailto: lalitpuf@rediffmail.com ">lalitpuf@rediffmail.com </a>
+                    <br>
+                    <strong>Website:</strong>
+                    <a href="www.matrixpusystems.com"></a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+   </footer>
+   <script>
+    
+    var dropdown = document.querySelector('.dropdown');
+
+dropdown.addEventListener('mouseover', function() {
+    dropdown.querySelector('.dropdown-content').style.display = 'block';
+});
+
+dropdown.addEventListener('mouseout', function() {
+    dropdown.querySelector('.dropdown-content').style.display = 'none';
+});
+
+function scrollToFooter() {
+        var footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    
+    var contactLinks = document.querySelectorAll('a[href="#contact"]');
+    contactLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); 
+            scrollToFooter(); 
+        });
+    });
+
+    document.getElementById('enquiry-form').addEventListener('submit', function(event) {
+         var name = document.getElementById('name').value.trim();
+         var email = document.getElementById('email').value.trim();
+         var message = document.getElementById('message').value.trim();
+
+         
+         if (name === '' || email === '') {
+             event.preventDefault(); 
+             document.getElementById('form-error-message').textContent = 'Name and email are required.';
+             return false;
+         }
+
+         
+         var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+         if (!emailPattern.test(email)) {
+             event.preventDefault(); 
+             document.getElementById('form-error-message').textContent = 'Invalid email format.';
+             return false;
+         }
+
+     });
+</script>
+   
+</body>
+</html>
